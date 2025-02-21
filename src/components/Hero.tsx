@@ -2,14 +2,14 @@
 // import { Carousel } from 'react-responsive-carousel';
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import suvWallpaper from '../assets/SUV wallpaper.jpg';
-import autoWash from '../assets/Automatic wash.jpg';
-import carWash from '../assets/Car wash.jpg';
+// import autoWash from '../assets/Automatic wash.jpg';
+// import carWash from '../assets/Car wash.jpg';
 import cleanInterior from '../assets/Clean interior.jpg';
-import garageLit from '../assets/Garage lit.jpg';
-import mercedesInterior from '../assets/Mercedes interior.jpg';
+// import garageLit from '../assets/Garage lit.jpg';
+// import mercedesInterior from '../assets/Mercedes interior.jpg';
 import polishServices from '../assets/Polishiing services.jpg';
 import soapyHood from '../assets/Soapy hood.jpg';
-import tireWash from '../assets/Tire wash.jpg';
+// import tireWash from '../assets/Tire wash.jpg';
 
 // Define service names as a union type
 type ServiceType = 'Interior Washing' | 'Polishing' | 'Deep Cleaning';
