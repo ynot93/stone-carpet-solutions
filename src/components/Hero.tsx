@@ -1,22 +1,42 @@
-import { useState } from 'react';
 // import { FaPhone, FaCheckCircle, FaStar } from 'react-icons/fa';
 // import { Carousel } from 'react-responsive-carousel';
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import suvWallpaper from '../assets/SUV wallpaper.jpg';
+import autoWash from '../assets/Automatic wash.jpg';
+import carWash from '../assets/Car wash.jpg';
+import cleanInterior from '../assets/Clean interior.jpg';
+import garageLit from '../assets/Garage lit.jpg';
+import mercedesInterior from '../assets/Mercedes interior.jpg';
+import polishServices from '../assets/Polishiing services.jpg';
+import soapyHood from '../assets/Soapy hood.jpg';
+import tireWash from '../assets/Tire wash.jpg';
+
+// Define service names as a union type
+type ServiceType = 'Interior Washing' | 'Polishing' | 'Deep Cleaning';
+
+const services: ServiceType[] = ['Interior Washing', 'Polishing', 'Deep Cleaning'];
+
+// Create a record type for serviceImages
+const serviceImages: Record<ServiceType, string> = {
+  'Interior Washing': cleanInterior,
+  'Polishing': polishServices,
+  'Deep Cleaning': soapyHood,
+};
 
 const Hero: React.FC = () => {
   return (
     <div className="font-sans">
       {/* Navbar */}
-      <nav className="bg-blue-400 text-white">
+      <nav className=" bg-blue-400 text-white">
         <div className="flex justify-between px-4 py-2 text-sm">
           <h1 className='font-bold text-2xl'>#1 rated power washers in Nairobi</h1>
           <div className="flex space-x-4">
-            <h1 className='font-bold text-2xl'>Call 0722000000</h1>
+            <h1 className='font-bold text-xl'>Call 0722000000</h1>
             <button className="bg-orange-500 px-3 py-1 rounded">Get Free Estimate</button>
           </div>
         </div>
         <div className="bg-amber-500 flex justify-between items-center px-4 py-4 text-white shadow">
-          <div className="text-3xl font-bold">Sam's Car Wash</div>
+          <div className="text-3xl font-bold">CarWashPro</div>
           <ul className="flex space-x-6">
             <li>Home</li>
             <li className="group relative">
@@ -48,17 +68,22 @@ const Hero: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-4xl font-bold" style={{ backgroundImage: 'url(https://via.placeholder.com/1500x700)' }}>
-        #1 leading pressure washing Company in Nairobi
+      <section className="h-[70vh] bg-cover bg-center flex items-center justify-center mx-auto text-white font-bold" style={{ backgroundImage: `url(${suvWallpaper})` }}>
+        <h1 className='text-6xl'>#1 leading pressure washing Company in Nairobi</h1>
       </section>
 
       {/* Our Services */}
-      <section className="py-12 px-6 bg-gray-100">
+      <section className="py-12 px-12 bg-gray-100">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <h2 className="text-3xl font-bold mb-6 lg:mb-0">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {['House Washing', 'Pressure Washing', 'Concrete Cleaning'].map(service => (
-              <div className="bg-white p-4 shadow rounded-lg -mt-12 lg:mt-0">
+            {services.map(service => (
+              <div className="bg-white p-4 shadow rounded-lg -mt-12 lg:mt-0 h-80">
+                <img 
+                  src={serviceImages[service]} 
+                  alt={service} 
+                  className="w-full h-48 object-cover rounded-t-lg" 
+                />
                 <h3 className="text-xl font-semibold mb-2">{service}</h3>
                 <button className="bg-orange-500 text-white px-4 py-2 rounded">{service}</button>
               </div>
@@ -93,10 +118,10 @@ const Hero: React.FC = () => {
       <footer className="bg-gray-800 text-white py-8 px-6">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           <div>
-            <h3 className="text-xl font-bold">CarWashPro</h3>
+            <h3 className="text-2xl font-bold">CarWashPro</h3>
           </div>
-          <div>
-            <h4 className="font-semibold">Quick Links</h4>
+          <div className='flex flex-col gap-4'>
+            <h4 className="font-semibold text-xl">Quick Links</h4>
             <ul>
               <li>Home</li>
               <li>Residential Services</li>
@@ -104,8 +129,8 @@ const Hero: React.FC = () => {
               <li>Discover Our Story</li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold">Others</h4>
+          <div className='flex flex-col gap-4'>
+            <h4 className="font-semibold text-xl">Others</h4>
             <ul>
               <li>Blogs</li>
               <li>News</li>
@@ -113,14 +138,14 @@ const Hero: React.FC = () => {
               <li>Reviews</li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-semibold">Contact</h4>
+          <div className='flex flex-col gap-4'>
+            <h4 className="font-semibold text-xl">Contact</h4>
             <p>Nairobi, Kenya</p>
             <p>0722000000</p>
             <p>info@carwashpro.com</p>
           </div>
-          <div>
-            <h4 className="font-semibold">Opening Hours</h4>
+          <div className='flex flex-col gap-4'>
+            <h4 className="font-semibold text-xl">Opening Hours</h4>
             <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
             <p>Sun: Closed</p>
           </div>
