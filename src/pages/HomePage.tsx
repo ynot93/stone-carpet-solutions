@@ -4,9 +4,9 @@ import Services from "../components/Services";
 import VideoSection from "../components/VideoSection";
 import Footer from "../components/Footer";
 import ReviewsCarousel from "../components/Testimonial";
-
+import { Link } from "react-router-dom";
+// Image imports
 import dronePower from '../assets/Drone powered power washing.png';
-import stoneCarpetLogo from '../assets/Stone Carpet Logo.png';
 import washCurb from '../assets/power wash curb.jpg';
 import powerWashOutdoor from '../assets/power wash wood.jpg';
 import powerWashFloor from '../assets/power wash floor.jpg';
@@ -19,13 +19,8 @@ const Home: React.FC = () => (
     <VideoSection />
 
     {/* Call To Action Section */}
-    <section className="bg-amber-500 text-white rounded-4xl m-8">
-      <div className="container mx-auto flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
-        <img
-          src={stoneCarpetLogo}
-          alt="Logo"
-          className="w-auto h-auto max-w-xs"
-        />
+    <section className="bg-amber-500 text-white container mx-auto rounded-4xl m-8">
+      <div className="flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
         <div className="md:ml-8 m-4 md:mt-0">
           <h2 className="text-5xl font-semibold mb-2">Ready For Our Service</h2>
           <p className='text-lg'>
@@ -34,12 +29,16 @@ const Home: React.FC = () => (
           </p>
         </div>
         <div className="flex flex-col space-y-4 items-center m-4">
-          <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Call Now
-          </button>
-          <button className="bg-amber-700 hover:bg-amber-300 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Get Quote
-          </button>
+          <a href="tel:+254722000000">
+            <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Call Now
+            </button>
+          </a>
+          <Link to={"/get-quote"}>
+            <button className="bg-amber-700 hover:bg-amber-300 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -71,13 +70,8 @@ const Home: React.FC = () => (
     </section>
 
     {/* Call To Action Section */}
-    <section className="bg-blue-500 text-white rounded-4xl m-8">
-      <div className="container mx-auto flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
-        <img
-          src={stoneCarpetLogo}
-          alt="Logo"
-          className="w-auto h-auto max-w-xs"
-        />
+    <section className="bg-blue-500 text-white container mx-auto rounded-4xl m-8">
+      <div className="flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
         <div className="md:ml-8 m-4 md:mt-0">
           <h2 className="text-5xl font-semibold mb-2">Ready For Our Service</h2>
           <p className='text-lg'>
@@ -86,12 +80,16 @@ const Home: React.FC = () => (
           </p>
         </div>
         <div className="flex flex-col space-y-4 items-center m-4">
-          <button className="bg-amber-500 hover:bg-amber-300 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Call Now
-          </button>
-          <button className="bg-blue-700 hover:bg-blue-300 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Get Quote
-          </button>
+          <a href="tel:+254722000000">
+            <button className="bg-amber-500 hover:bg-amber-300 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Call Now
+            </button>
+          </a>
+          <Link to={"/get-quote"}>
+            <button className="bg-blue-700 hover:bg-blue-300 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -123,13 +121,8 @@ const Home: React.FC = () => (
     </section>
 
     {/* Call To Action Section */}
-    <section className="bg-amber-500 text-white rounded-4xl m-8">
-      <div className="container mx-auto flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
-        <img
-          src={stoneCarpetLogo}
-          alt="Logo"
-          className="w-auto h-auto max-w-xs"
-        />
+    <section className="bg-amber-500 text-white container mx-auto rounded-4xl m-8">
+      <div className="flex md:flex-row py-6 flex-col items-center justify-between text-center md:text-left">
         <div className="md:ml-8 m-4 md:mt-0">
           <h2 className="text-5xl font-semibold mb-2">Ready For Our Service</h2>
           <p className='text-lg'>
@@ -138,12 +131,16 @@ const Home: React.FC = () => (
           </p>
         </div>
         <div className="flex flex-col space-y-4 items-center m-4">
-          <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Call Now
-          </button>
-          <button className="bg-amber-700 hover:bg-amber-300 text-white font-bold py-2 px-4 w-full whitespace-nowrap rounded">
-            Get Quote
-          </button>
+          <a href="tel:+254722000000">
+            <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Call Now
+            </button>
+          </a>
+          <Link to={"/get-quote"}>
+            <button className="bg-amber-700 hover:bg-amber-300 text-white font-bold py-2 px-20 w-full whitespace-nowrap rounded">
+              Get Quote
+            </button>
+          </Link>
         </div>
       </div>
     </section>
