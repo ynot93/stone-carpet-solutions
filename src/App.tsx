@@ -9,7 +9,7 @@ import GetQuotePage from "./pages/GetQuotePage";
 
 function App() {
   return (
-    <Router basename="/sam-car-wash">
+    <Router basename="/stone-carpet-solutions">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/residential-cleaning" element={<ResidentialCleaning />} />
