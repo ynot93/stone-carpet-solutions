@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/sam-car-wash',
+  base: '/stone-carpet-solutions',
 })
