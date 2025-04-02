@@ -1,4 +1,4 @@
-// Footer code
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
         <div className='flex flex-col gap-4'>
           <h4 className="font-semibold text-xl">Quick Links</h4>
           <ul>
-            <li>Home</li>
-            <li>Residential Services</li>
-            <li>Commercial</li>
-            <li>Discover Our Story</li>
+            <Link to="/" className="hover:text-gray-500"><li>Home</li></Link>
+            <Link to="/residential-cleaning" className="hover:text-gray-500"><li>Residential Services</li></Link>
+            <Link to="/commercial-washing" className="hover:text-gray-500"><li>Commercial</li></Link>
+            <Link to="/our-story" className="hover:text-gray-500"><li>Discover Our Story</li></Link>
           </ul>
         </div>
         <div className='flex flex-col gap-4'>
