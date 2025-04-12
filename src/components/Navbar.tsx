@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Dropdown Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white shadow-lg absolute top-16 left-0 w-full">
+          <div className="md:hidden bg-white shadow-lg top-16 left-0 w-full">
             <ul className="flex flex-col items-center space-y-4 py-6 text-gray-700 text-lg">
               <li className="hover:text-blue-500 cursor-pointer">
                 <Link to="/" onClick={() => setIsOpen(false)}>
