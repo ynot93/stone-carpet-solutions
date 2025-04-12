@@ -60,7 +60,9 @@ const Services: React.FC = () => {
         </div>
         <div className='flex flex-col items-center text-center'>
           <p className="mt-8">Contact us today for a free estimate and to schedule an appointment with one of our cleaning professionals.</p>
-          <button className="bg-blue-400 hover:bg-blue-600 text-white px-6 py-3 mt-4 rounded">Get a free estimate</button>
+          <Link to={"/get-quote"}>
+            <button className="bg-blue-400 hover:bg-blue-600 text-white px-6 py-3 rounded mt-4">Get Free Estimate</button>
+          </Link>
         </div>
       </div>
     </section>
