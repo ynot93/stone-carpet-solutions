@@ -88,7 +88,7 @@ const CommercialCleaning = () => {
                     </p>
                   </div>
                   <div className="flex flex-col space-y-4 items-center mb-4">
-                    <a href="tel:+254722000000">
+                    <a href="tel:+254722688664">
                       <button className="bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-8 w-full whitespace-nowrap rounded">
                         Call Now
                       </button>
