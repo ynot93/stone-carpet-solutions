@@ -15,7 +15,7 @@ const VideoSection: React.FC = () => {
             <li className="flex items-center"><FaCheckCircle className="text-green-500 mr-2" /> Your satisfaction is our top priority; we strive to exceed expectations with every job.</li>
           </ul>
           <button className="flex items-center bg-blue-400 hover:bg-blue-600 mt-4 px-6 py-3 rounded text-white">
-            <FaPhone className="text-orange-500 mr-2" /> 0722000000
+            <FaPhone className="text-orange-500 mr-2" /> 0722 688664
           </button>
           <p className="text-gray-600 mt-4">We're dedicated to delivering exceptional quality in every service, guaranteed. Contact us today for a spotless result you can trust.</p>
         </div>

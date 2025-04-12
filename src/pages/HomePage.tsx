@@ -5,6 +5,8 @@ import VideoSection from "../components/VideoSection";
 import Footer from "../components/Footer";
 import ReviewsCarousel from "../components/Testimonial";
 import { Link } from "react-router-dom";
+import WhatsAppButton from "../components/WhatsAppButton";
+
 // Image imports
 import dronePower from '../assets/Drone powered power washing.png';
 import washCurb from '../assets/power wash curb.jpg';
@@ -17,6 +19,7 @@ const Home: React.FC = () => (
     <Hero />
     <Services />
     <VideoSection />
+    <WhatsAppButton />
 
     {/* Call To Action Section */}
     <section className="bg-amber-500 text-white container mx-auto rounded-4xl m-8">

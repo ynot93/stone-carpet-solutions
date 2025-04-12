@@ -117,7 +117,7 @@ const GetQuotePage = () => {
             >
               <option value="">Select a Service</option>
               <option value="Corporate Washing">Corporate Washing</option>
-              <option value="Corporate Carpet Cleaning">Corporate Carpet Cleaning</option>
+              <option value="Corporate Carpet Cleaning">Corporate Windows Cleaning</option>
               <option value="Residential Cleaning">Residential Cleaning</option>
               <option value="Exterior Washing">Exterior Washing</option>
               <option value="Specialized Services">Specialized Services</option>
