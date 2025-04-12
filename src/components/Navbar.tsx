@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between py-2 text-sm container mx-auto">
           <h1 className="font-medium text-2xl">#1 rated power washers in Nairobi</h1>
           <div className="flex space-x-4">
-            <h1 className="font-medium text-xl">Call 0722000000</h1>
+            <h1 className="font-medium text-xl">Call 0722 688664</h1>
             <Link to={"/get-quote"}><button className="bg-orange-500 px-3 py-1 rounded">Get Free Estimate</button></Link>
           </div>
         </div>

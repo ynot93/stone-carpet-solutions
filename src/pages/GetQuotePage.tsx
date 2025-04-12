@@ -38,7 +38,7 @@ const GetQuotePage = () => {
     return (
       <>
         <Navbar />
-        <div className="container mx-auto p-8">
+        <div className="container mx-auto p-8 lg:mb-20">
           <h1 className="text-3xl font-bold text-blue-600 mb-4">Thank You!</h1>
           <p className="text-lg text-gray-700">
             Your quote request has been submitted successfully. We will be in touch with you shortly to discuss your needs further.
@@ -66,6 +66,7 @@ const GetQuotePage = () => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="name"
+              name="name"
               type="text"
               placeholder="Your Name"
               value={name}
@@ -80,6 +81,7 @@ const GetQuotePage = () => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
+              name="email"
               type="email"
               placeholder="Your Email"
               value={email}
@@ -94,6 +96,7 @@ const GetQuotePage = () => {
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="phone"
+              name="phone"
               type="tel"
               placeholder="Your Phone Number"
               value={phone}
@@ -107,6 +110,7 @@ const GetQuotePage = () => {
             <select
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="serviceType"
+              name="serviceType"
               value={serviceType}
               onChange={(e) => setServiceType(e.target.value)}
               required
@@ -127,6 +131,7 @@ const GetQuotePage = () => {
             <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="details"
+              name="details"
               rows={4}
               placeholder="Please provide any additional details about your request (e.g., size of area, specific needs, urgency)."
               value={details}

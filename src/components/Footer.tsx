@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
         <div className='flex flex-col gap-4'>
           <h4 className="font-semibold text-xl">Contact</h4>
           <p>Nairobi, Kenya</p>
-          <p>0722000000</p>
-          <p>info@carwashpro.com</p>
+          <p>0722 688664</p>
+          <p>info@stonecarpetsolutions.co.ke</p>
         </div>
         <div className='flex flex-col gap-4'>
           <h4 className="font-semibold text-xl">Opening Hours</h4>
